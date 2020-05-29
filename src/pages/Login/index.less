@@ -1,0 +1,125 @@
+@import '~antd/es/style/themes/default.less';
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  width: 970px;
+  margin: 0 auto;
+  height: 590px;
+  border-radius: 18px;
+  background: #fff;
+  padding: 100px 30px;
+
+  .icon {
+    margin-left: 16px;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+
+    .register {
+      float: right;
+    }
+  }
+
+  :global {
+    .antd-pro-login-submit {
+      width: 100%;
+      margin-top: 24px;
+    }
+    .icon-user {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background: url(/img/login-users.png) no-repeat;
+    }
+    .icon-pwd {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background: url(/img/login-pwds.png) no-repeat;
+      background-size: contain;
+    }
+    .icon-captcha {
+      display: inline-block;
+      width: 26px;
+      height: 30px;
+      background: url(/img/login-captcha.png) no-repeat;
+    }
+    .ant-input-lg {
+      width: 100%;
+      height: 46px;
+      padding-left: 50px !important;
+    }
+    .ant-input-affix-wrapper {
+      width: 100%;
+      &:hover {
+        .ant-input:not(.ant-input-disabled) {
+          border-color: #1890ff;
+        }
+      }
+    }
+    .ant-input {
+      width: 100%;
+      &:focus {
+        border-color: #1890ff;
+      }
+    }
+    .ant-select-selection {
+      height: 46px;
+    }
+    .ant-select-selection__rendered {
+      position: relative;
+      height: 46px;
+      line-height: 46px;
+      padding-left: 40px !important;
+      &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 5px;
+        width: 32px;
+        height: 32px;
+        background: url(/img/school.png) no-repeat;
+      }
+    }
+    .ant-select-selection__placeholder {
+      left: 40px;
+    }
+    .ant-btn-primary {
+      height: 48px;
+    }
+  }
+  .from-box {
+    width: 500px;
+  }
+  .loginContent {
+    width: 500px;
+    margin: 50px auto;
+  }
+}
+.title {
+  text-align: center;
+  color: #262626;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+.loginButton {
+  button {
+    width: 100%;
+  }
+}
